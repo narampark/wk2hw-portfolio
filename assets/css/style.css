@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+header img {
+  max-height: 100px;
+  max-width: 150px;
+}
+
+header h1 .dev {
+    color:black;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  display: inline;
+}
+header p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  display: block;
+}
+header {
+    padding: 10px;
+    text-align: center;
+    background: rgb(104, 104, 181);
+    color: brown;
+  }
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul {
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+nav ul li {
+    display: inline;
+    margin-left: 25px;
+}
+section img {
+    max-height:500px;
+    max-width:500px;
+}
+aside {
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    width: 20%;
+    height: 100%;
+    background-color:azure;
+}
+aside img {
+    display: block;
+    max-height: 150px;
+    max-width: 100px;
+}
