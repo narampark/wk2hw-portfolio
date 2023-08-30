@@ -1,9 +1,12 @@
+/* allows me to include the padding and the border to the element's total width and height */
 * {
   box-sizing: border-box;
 }
+/* scroll behavior smooth allows the link to scroll down to the selected page rather than a sudden jerk to it */
 html {
   scroll-behavior: smooth;
 }
+/* different fonts included in case a user's computer doesn't have some of the fonts available */
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -15,12 +18,14 @@ header {
   background-color: steelblue;
   color: black;
 }
+/* flex property given to easily center the text */
 header h1 {
   display: flex;
   justify-content: center;
   font-size: 300%;
   margin: 0%;
 }
+/* flex property given to easily center the text */
 header h2 {
   display: flex;
   justify-content: center;
@@ -28,13 +33,16 @@ header h2 {
   margin: 0;
   color: brown;
 }
+/* flex property given to move the nav bar to the right side */
 nav {
   display: flex;
   justify-content: flex-end;
 }
+/* margin bottom 0 to get rid of the gap in the nav bar and the header */
 nav ul {
   margin-bottom: 0;
 }
+/* inline so the nav bar is properly laid across the header */
 nav li {
   display: flex;
   display: inline;
@@ -44,6 +52,7 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
 }
+/* flex wrap allows the pictures to move down to the next section */
 .container {
   margin: 0;
   padding: 0;
@@ -51,7 +60,7 @@ main {
   flex: 1;
   flex-wrap: wrap;
 }
-
+/* border style and color added to separate the content that's right next to each other */
 main h2 {
   background-color: navy;
   color: white;
@@ -65,6 +74,7 @@ span[pic-descr] {
   text-decoration: underline;
   color: #000;
 }
+/* position absolute and z-index allows the text to appear on top of the image */
 span[pic-descr]:hover::after {
   content: attr(pic-descr);
   position: absolute;
@@ -77,6 +87,7 @@ span[pic-descr]:hover::after {
   font-size: 100%;
   z-index: 1;
 }
+/* gives all the images a width of 100% */
 section img {
   max-width: 100%;
   width: 100%;
@@ -87,7 +98,7 @@ section img {
   width: 720px;
   height: auto;
 }
-
+/* overrides the width of 100% for just the images with a class of smallpic */
 .smallpic img {
   width: 720px;
   height: auto;
@@ -100,6 +111,7 @@ article {
   text-align: center;
   line-height: 1.5;
 }
+/* gets rid of the bullet points for email, phone, and github */
 article ul {
   list-style-type: none;
 }
@@ -108,6 +120,7 @@ article img {
   width: 200px;
   height: auto;
 }
+/* flex end puts the text in the right side */
 footer {
   display: flex;
   justify-content: flex-end;
@@ -116,6 +129,16 @@ footer {
   padding: 10px;
   color: brown;
 }
+/* sized all images to fit the page when viewed on smaller resolution */
+@media screen and (max-width: 1439px) {
+  .smallpic img {
+    width: 100%;
+  }
+  .smallpic h2 {
+    width: 100%;
+  }
+}
+/* header, footer, and the article element kept getting smaller when the screen was sized smaller so I gave them a min width */
 @media screen and (max-width: 768px) {
   main {
     min-width: 720px;
