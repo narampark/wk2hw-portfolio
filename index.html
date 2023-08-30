@@ -9,62 +9,59 @@
   </head>
   <body>
     <header>
-      <img
-        src="./assets/images/header-img.jpg"
-        alt="picture of me and my dog"
-      />
-      <h1><span class="dev">Dev</span>NP</h1>
-      <p>first venture into making a portfolio</p>
+      <h1>DevNP</h1>
+      <h2>First venture in making a portfolio!</h2>
       <nav>
         <ul>
           <li>
-            <a href="#">About Me</a>
+            <a href="#About Me">About Me</a>
           </li>
           <li>
-            <a href="#">Work</a>
+            <a href="#Work">Work</a>
           </li>
           <li>
-            <a href="#">Contact Me</a>
+            <a href="#Contact Me">Contact Me</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
+      <section id="Work">
         <h2>Prework Study Guide</h2>
-        <img src="./assets/images/prework.png" />
-        <p>
-          Pre-bootcamp project on creating a prework study guide using HTML,
-          CSS, and JavaScript.
-        </p>
+        <a href="https://narampark.github.io/prework-study-guide/"
+          ><span
+            pic-descr="Pre-bootcamp project on creating a prework study guide using HTML,
+          CSS, and JavaScript."
+            ><img src="./assets/images/prework.png" /></span
+        ></a>
       </section>
-      <section>
+      <div class="container">
+      <section class="smallpic">
         <h2>Week 1 Code Refactor</h2>
-        <img src="./assets/images/code-refactor.png" />
-        <p>
-          Week 1 homework assignment on refactoring a given code. Included
-          changing div elements into semantic HTML tags and cleaning up the CSS
-          of redundancy.
-        </p>
+        <a href="https://narampark.github.io/wk1hw-code-refactor/"
+          ><span pic-descr="Refactoring a given code"
+            ><img src="./assets/images/code-refactor.png" /></span
+        ></a>
       </section>
-      <section>
+      <section class="smallpic">
         <h2>Future Project 1</h2>
-        <img src="./assets/images/placeholder.jpg" />
-        <p>A placeholder for future projects</p>
+        <span pic-descr="A placeholder for future projects"
+          ><img src="./assets/images/placeholder.jpg"
+        /></span>
       </section>
-      <section>
+      <section class="smallpic">
         <h2>Future Project 2</h2>
-        <img src="./assets/images/placeholder.jpg" />
-        <p>a placeholder for future projects</p>
+        <span pic-descr="A placeholder for future projects"
+        ><img src="./assets/images/placeholder.jpg" /></span>
       </section>
-      <section>
+      <section class="smallpic">
         <h2>Future Project 3</h2>
-        <img src="./assets/images/placeholder.jpg" />
-        <p>a placeholder for future projects</p>
-      </section>
+        <span pic-descr="A placeholder for future projects"
+        ><img src="./assets/images/placeholder.jpg" /></span>
+      </section></div>
     </main>
-    <aside>
-      <h3>About Me</h3>
+    <article>
+      <h3 id="About Me">About Me</h3>
       <img src="./assets/images/about-me-img.jpg" />
       <p>
         My name is Na Ram Park, located in Fairfax, Virginia. I've spent most of
@@ -74,13 +71,19 @@
         the growth of technology cannot be ignored and would like to at least
         learn the basics.
       </p>
-      <h3>Contact Me</h3>
+      <h3 id="Contact Me">Contact Me</h3>
       <ul>
-        <li>Email: narampark92@gmail.com</li>
-        <li>Phone: 571-830-0066</li>
-        <li>Github: https://github.com/narampark</li>
+        <li>
+          <strong>Email:</strong
+          ><a href="mailto:narampark92@gmail.com"> narampark92@gmail.com</a>
+        </li>
+        <li><strong>Phone:</strong> 571-830-0066</li>
+        <li>
+          <strong>Github:</strong
+          ><a href="https://github.com/narampark"> github.com/narampark</a>
+        </li>
       </ul>
-    </aside>
+    </article>
     <footer>
       <h2>DevNP's Portfolio version 1.0</h2>
     </footer>
