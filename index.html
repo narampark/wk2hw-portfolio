@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevNP Portfolio</title>
+    <!--css reset applied before the stylesheet so it doesn't get reset-->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
@@ -13,7 +14,9 @@
       <h2>First venture in making a portfolio!</h2>
       <nav>
         <ul>
+          <!--nav bar links to scroll down to the section of the webpage-->
           <li>
+            <!--anchor tag to link them to the sections-->
             <a href="#About Me">About Me</a>
           </li>
           <li>
@@ -27,7 +30,9 @@
     </header>
     <main>
       <section id="Work">
+        <!--span used to add information on the work pictures when you hover over it-->
         <h2>Prework Study Guide</h2>
+        <!--link to the deployed work-->
         <a href="https://narampark.github.io/prework-study-guide/"
           ><span
             pic-descr="Pre-bootcamp project on creating a prework study guide using HTML,
@@ -35,14 +40,17 @@
             ><img src="./assets/images/prework.png" /></span
         ></a>
       </section>
+      <!--div to group the rest of the work separately from the first one-->
       <div class="container">
       <section class="smallpic">
         <h2>Week 1 Code Refactor</h2>
+        <!--link to the deployed work-->
         <a href="https://narampark.github.io/wk1hw-code-refactor/"
           ><span pic-descr="Refactoring a given code"
             ><img src="./assets/images/code-refactor.png" /></span
         ></a>
       </section>
+      <!--gave the section a class of smallpic so I can target the h2 and img of just these 4-->
       <section class="smallpic">
         <h2>Future Project 1</h2>
         <span pic-descr="A placeholder for future projects"
@@ -60,6 +68,7 @@
         ><img src="./assets/images/placeholder.jpg" /></span>
       </section></div>
     </main>
+    <!--gave it the article tag because it's a separate information from the works section-->
     <article>
       <h3 id="About Me">About Me</h3>
       <img src="./assets/images/about-me-img.jpg" />
@@ -73,12 +82,12 @@
       </p>
       <h3 id="Contact Me">Contact Me</h3>
       <ul>
-        <li>
+        <li><!--mailto added to email so it'll open the default email app on the user's computer-->
           <strong>Email:</strong
           ><a href="mailto:narampark92@gmail.com"> narampark92@gmail.com</a>
         </li>
         <li><strong>Phone:</strong> 571-830-0066</li>
-        <li>
+        <li><!--strong tag to bold-->
           <strong>Github:</strong
           ><a href="https://github.com/narampark"> github.com/narampark</a>
         </li>
